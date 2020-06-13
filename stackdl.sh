@@ -71,6 +71,7 @@ download() {
 
   echo "=== downloading to ${filename}"
   mkdir -p "$(dirname "${filename}")" || exit
+  [ -f "${filename}" ] && echo "file already exists. skipping" && exit 0
 
   if [ "$STACKDL_DEBUG" ]; then
     echo
