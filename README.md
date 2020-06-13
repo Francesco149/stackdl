@@ -1,5 +1,11 @@
 simple sh script to download stuff from stackstorage.com
 
+# Requirements
+* posix shell or bash
+* curl
+* sed
+* grep
+
 # Install
 
 ```sh
